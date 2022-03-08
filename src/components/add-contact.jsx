@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 
 import { checkPhoneNumber } from "../helpers/check-phone-number";
+import { checkName } from "../helpers/check-name";
 import { Notification } from "./notification";
+
+import "../styles/add-contact.css";
 
 export function AddContact({ addContact }) {
   const [contactName, setContactName] = useState("");
@@ -24,7 +27,9 @@ export function AddContact({ addContact }) {
   function submitHandler(event) {
     event.preventDefault();
 
-    if (!contactName) return showNotification("Enter the contact name");
+    if (!checkName(contactName)) {
+      return showNotification("Enter a valid name (20 or less characters)")
+    }
     if (!checkPhoneNumber(contactPhone)) {
       return showNotification("Enter a valid phone number");
     }
@@ -47,6 +52,7 @@ export function AddContact({ addContact }) {
           placeholder="Enter contact name"
           value={contactName}
           onChange={changeHandler(setContactName)}
+          maxLength={20}
         />
         <input
           placeholder="Enter contact number"

@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eeeef8;
+}
+
+header h1 {
+  text-align: center;
+  margin: 20px;
+}

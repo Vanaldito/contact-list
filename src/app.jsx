@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { AddContact } from "./components/add-contact";
 import { ContactList } from "./components/contact-list";
 
+import "./styles/app.css";
+
 export function App() {
   const [contacts, setContacts] = useState(getContacts());
 
@@ -24,9 +26,14 @@ export function App() {
   }
 
   return (
-    <main>
-      <AddContact addContact={addContact} />
-      <ContactList contacts={contacts} removeContact={removeContact} />
-    </main>
+    <>
+      <header>
+        <h1>Contact List</h1>
+      </header>
+      <main>
+        <AddContact addContact={addContact} />
+        <ContactList contacts={contacts} removeContact={removeContact} />
+      </main>
+    </>
   );
 }

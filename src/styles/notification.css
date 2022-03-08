@@ -1,0 +1,38 @@
+p.notification {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  width: max-content;
+  max-width: 80%;
+  bottom: 30px;
+  animation: show 2s ease;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px #aaaaaa;
+  border-radius: 5px 0px 0px 5px;
+}
+
+span.warning-icon {
+  display: inline-block;
+  color: #ff0000;
+  margin-right: 5px;
+}
+
+@keyframes show {
+  0% {
+    transform: translateX(100%);
+  }
+
+  10% {
+    transform: translateX(0%);
+  }
+
+  90% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}

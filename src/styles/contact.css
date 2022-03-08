@@ -1,0 +1,19 @@
+div.contact {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+div.contact button {
+  justify-self: center;
+  border: none;
+  outline: none;
+  color: #ff0000;
+  background-color: inherit;
+  cursor: pointer;
+}
