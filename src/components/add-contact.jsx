@@ -49,17 +49,17 @@ export function AddContact({ addContact }) {
     <>
       <form onSubmit={submitHandler}>
         <input
-          placeholder="Enter contact name"
+          placeholder="Nombre"
           value={contactName}
           onChange={changeHandler(setContactName)}
           maxLength={20}
         />
         <input
-          placeholder="Enter contact number"
+          placeholder="Número de teléfono"
           value={contactPhone}
           onChange={changeHandler(setContactPhone)}
         />
-        <button type="submit">Add contact</button>
+        <button type="submit">Añadir contacto</button>
       </form>
       {notification && <Notification message={notification} />}
     </>

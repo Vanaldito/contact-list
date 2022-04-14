@@ -11,9 +11,9 @@ export function ContactList({ contacts, removeContact }) {
     <ul className="contact-list">
       <li>
         <div className="contact">
-          <p>Name</p>
-          <p>Phone</p>
-          <p>Remove</p>
+          <p>Nombre</p>
+          <p>Teléfono</p>
+          <p>Eliminar</p>
         </div>
       </li>
       {contacts.map((contact) => {

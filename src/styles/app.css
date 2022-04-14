@@ -3,11 +3,25 @@
   padding: 0;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
-  background-color: #eeeef8;
+  background-color: var(--bunker);
 }
 
 header h1 {
   text-align: center;
   margin: 20px;
+  font-size: 2.8rem;
+  color: var(--white);
+}
+
+:root {
+  --white: #ffffff;
+  --bunker: #171718;
+  --shark: #1f1f21;
+  --golden-yellow: #f9b53a;
+  --navbar-height: 60px;
 }

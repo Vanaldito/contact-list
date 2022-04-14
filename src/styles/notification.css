@@ -1,4 +1,5 @@
 p.notification {
+  font-size: 1.4rem;
   display: flex;
   align-items: center;
   position: fixed;
